@@ -371,54 +371,45 @@ z-index: 2;
   height: 283px;
 }
 
-.places__cards_txt {
-  grid-template-columns: repeat(2, 1fr);
-
+.places__txtcards {
+display: flex;
 }
 
-.places__card_txt{
-  margin-bottom: 77px;
-}
 
-.places__card_txt_tittle {
+
+.txtcard_item-title {
   color: black;
-font-size: 30px;
-font-weight: 500;
-line-height: 40px;
-margin-bottom: 85px;
-padding-left: 108px;
-padding-top: 40px;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 40px;
+  max-width: 70%;
 }
 
-.places__card_txt_st {
+.txtcard_item-txt {
   color: black;
-font-size: 16px;
-font-weight: 400;
-line-height: 24px;
-margin-bottom: 58px;
-padding-left: 108px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    max-width: 90%;
+    margin-top: 60px;
+    margin-bottom: 40px;
 }
 
-.places__link-txt_1{
-  padding-left: 108px;
+.pt_reverse {
+  flex-direction: row-reverse;
+  margin-top: 100px;
 }
 
-.places__link-txt {
-padding-left: 44px;
+.ti_up{
+  margin-left: 100px;
 }
 
-.pt-right {
-  padding-left: 47px;
-  padding-right: 100px;
+.txt_down {
+  max-width: 75%;
 }
 
-.pt-mb {
-  margin-bottom: 45px;
-}
 
-.pt_st-mb {
-  margin-bottom: 74px;
-}
+
 
 
 /*rating*/
@@ -734,6 +725,27 @@ line-height: 24px;
     font-size: 20px;
   }
 
+  .places__txtcards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .txtcard_item {
+    margin-left: 150px;
+  }
+
+ .txtcard_item {
+  margin-top: 60px;
+ }
+
+ .txtcard_item-txt {
+  max-width: 80%;
+ }
+
+ .pt_reverse {
+  margin-bottom: 150px;
+ }
+
 
   .rating__cards {
     justify-content: center;
@@ -895,29 +907,39 @@ padding-left: 0;
   object-fit: cover;
 }
 
-.places__cards_txt {
-  display: flex;
+
+.places__txtcards {
   flex-direction: column;
+  align-items: center;
 }
 
-.places__card_txt {
-  margin-bottom: 40px;
-}
-
-.places__card_reverse{
-  display: flex;
-  flex-direction: column-reverse;
+.txtcard_item-img {
+  width: 370px;
 }
 
 
-.places__card_txt_tittle {
-  padding: 0;
-  margin: 0;
-  margin-bottom: 30px;
+.txtcard_item {
+  margin-left: 20px;
 }
 
-.places__card_txt_st {
-  padding: 0;
+.txtcard_item {
+margin-top: 60px;
+}
+
+.txtcard_item-txt {
+max-width: 100%;
+}
+
+.pt_reverse {
+margin-bottom: 50px;
+}
+
+
+
+
+
+.rating__cards {
+  justify-content: center;
 }
 
 .rating__card :not(:last-child) {
